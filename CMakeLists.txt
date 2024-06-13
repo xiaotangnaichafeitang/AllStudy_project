@@ -19,10 +19,12 @@ set(PROJECT_SOURCES
         src/main.cpp
 
         src/mainwindow.cpp
-        # src/DesignModel/observer.cpp
+        src/DesignModel/observer.cpp
+        src/DesignModel/subject.cpp
 
         include/mainwindow.h
-        # include/DesignModel/observer.h
+        include/DesignModel/observer.h
+        include/DesignModel/subject.h
 
         ui/mainwindow.ui
 
@@ -50,6 +52,8 @@ else()
     else()
         add_executable(AllStudy_project
             ${PROJECT_SOURCES}
+
+
             # src/Design_model/observer.h src/Design_model/observer.cpp
         )
     endif()
