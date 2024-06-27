@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+﻿cmake_minimum_required(VERSION 3.5)
 
 project(AllStudy_project VERSION 0.1 LANGUAGES CXX)
 
@@ -14,6 +14,7 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets LinguistTools)
 
 set(TS_FILES AllStudy_project_zh_CN.ts)
 set(CMAKE_AUTOUIC_SEARCH_PATHS ${CMAKE_CURRENT_SOURCE_DIR}/ui)
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/utf-8>")
 
 set(PROJECT_SOURCES
         src/main.cpp
@@ -21,12 +22,17 @@ set(PROJECT_SOURCES
         src/mainwindow.cpp
         src/DesignModel/observer.cpp
         src/DesignModel/subject.cpp
+        src/Game_2048/core/board.cpp
+        src/Game_2048/core/tile.cpp
 
         include/mainwindow.h
         include/DesignModel/observer.h
         include/DesignModel/subject.h
+        include/Game_2048/core/board.h
+        include/Game_2048/core/tile.h
 
         ui/mainwindow.ui
+
 
         ${TS_FILES}
 )
