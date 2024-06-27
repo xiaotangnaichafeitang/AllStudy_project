@@ -9,12 +9,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5287425-4f82-440b-b0ff-914aeb1099cc" name="更改" comment="子项目：2048_core_board.cpp实现">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/DesignModel/subject.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Game_2048/core/board.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Game_2048/core/tile.cpp" beforeDir="false" />
-    </list>
+    <list default="true" id="c5287425-4f82-440b-b0ff-914aeb1099cc" name="更改" comment="子项目：2048_core_board.cpp实现test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +55,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.selected.configurable": "http.proxy",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -76,6 +71,7 @@
       <workItem from="1719020069284" duration="23000" />
       <workItem from="1719498225127" duration="421000" />
       <workItem from="1719498832505" duration="249000" />
+      <workItem from="1719499087795" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -101,7 +97,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719498460099</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="子项目：2048_core_board.cpp实现2">
+      <option name="closed" value="true" />
+      <created>1719499153575</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1719499153575</updated>
+    </task>
+    <task id="LOCAL-00005" summary="子项目：2048_core_board.cpp实现test">
+      <option name="closed" value="true" />
+      <created>1719499284474</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1719499284474</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +146,8 @@
     <MESSAGE value="11" />
     <MESSAGE value="22" />
     <MESSAGE value="子项目：2048_core_board.cpp实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="子项目：2048_core_board.cpp实现" />
+    <MESSAGE value="子项目：2048_core_board.cpp实现2" />
+    <MESSAGE value="子项目：2048_core_board.cpp实现test" />
+    <option name="LAST_COMMIT_MESSAGE" value="子项目：2048_core_board.cpp实现test" />
   </component>
 </project>
