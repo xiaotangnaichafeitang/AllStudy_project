@@ -25,19 +25,19 @@ public:
     // 析构函数
     ~Board();
     // 将棋盘重置为初始状态（除了两个 2 之外其他都为空）
-    void resret();
+    void reset();
     // 获取指定位置的数字块
-    Tile* getTile(int i, int j);
+    Tile *getTile(int i, int j);
     // 获取棋盘维度
-    int getDimension() const { return dimension; }
+    int getDimension() const;
     // 移动数字块
     void move(Direction direction);
     // 检查棋盘是否已满
     bool full() const;
     // 获取上回合得分
-    int getPointsScoredLastRound() const { return pointsScoredLastRound; }
+    int getPointsScoredLastRound() const;
     // 检查上回合是否发生瓷砖碰撞
-    bool isTileCollisionLastRound() const { return tileCollisionLastRound; }
+    bool isTileCollisionLastRound() const;
     // 检查是否还有可能的移动
     bool movePossible() const;
 
@@ -64,9 +64,9 @@ private:
     int dimension;
     // 初始化一个空的棋盘
     // 上回合得分
-        int pointsScoredLastRound;
+    int pointsScoredLastRound;
     // 上回合是否发生数字块碰撞
-        bool tileCollisionLastRound;
+    bool tileCollisionLastRound;
 
 };
 

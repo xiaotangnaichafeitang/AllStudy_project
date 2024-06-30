@@ -36,7 +36,7 @@ Board::~Board()
     }
 }
 
-void Board::resret()
+void Board::reset()
 {
     pointsScoredLastRound = 0;
     tileCollisionLastRound = false;
@@ -53,6 +53,13 @@ void Board::resret()
     start = freePosition();
     board[start[0]][start[1]] = new Tile();
 }
+
+Tile* Board::getTile(int i, int j)
+{
+    return board[i][j];
+}
+
+int Board::getDimension() const { return dimension; }
 
 void Board::move(Direction direction)
 {
@@ -100,6 +107,10 @@ bool Board::full() const
                 full = false;
     return full;
 }
+
+bool Board::isTileCollisionLastRound() const { return tileCollisionLastRound; }
+
+int Board::getPointsScoredLastRound() const { return pointsScoredLastRound; }
 
 bool Board::movePossible() const
 {

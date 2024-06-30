@@ -24,12 +24,23 @@ set(PROJECT_SOURCES
         src/DesignModel/subject.cpp
         src/Game_2048/core/board.cpp
         src/Game_2048/core/tile.cpp
+        src/Game_2048/core/game.cpp
+        src/Game_2048/gui/qgameboard.cpp
+        src/Game_2048/gui/qgameoverwindow.cpp
+        src/Game_2048/gui/qtile.cpp
+        src/Game_2048/gui/qresetbutton.cpp
+
 
         include/mainwindow.h
         include/DesignModel/observer.h
         include/DesignModel/subject.h
         include/Game_2048/core/board.h
         include/Game_2048/core/tile.h
+        include/Game_2048/core/game.h
+        include/Game_2048/gui/qgameboard.h
+        include/Game_2048/gui/qgameoverwindow.h
+        include/Game_2048/gui/qtile.h
+        include/Game_2048/gui/qresetbutton.h
 
         ui/mainwindow.ui
 
