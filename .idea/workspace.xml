@@ -3,13 +3,27 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5287425-4f82-440b-b0ff-914aeb1099cc" name="更改" comment="子项目：2048_core_board.cpp实现test" />
+    <list default="true" id="c5287425-4f82-440b-b0ff-914aeb1099cc" name="更改" comment="子项目：2048_基本实现">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt.user" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/Game_2048/core/board.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/Game_2048/core/board.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/mainwindow.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/mainwindow.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainwindow.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainwindow.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,13 +63,14 @@
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "G:/AStudyData/AprojectS/CppWare/AllStudy_project/AllStudy_project",
+    "last_opened_file_path": "G:/AStudyData/AprojectS/CppWare/AllStudy_project/AllStudy_project/CMakeLists.txt",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "http.proxy",
+    "ts.external.directory.path": "I:\\AProwerTool\\CLion 2024.1\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -72,6 +87,9 @@
       <workItem from="1719498225127" duration="421000" />
       <workItem from="1719498832505" duration="249000" />
       <workItem from="1719499087795" duration="448000" />
+      <workItem from="1719750273366" duration="183000" />
+      <workItem from="1720789795764" duration="36000" />
+      <workItem from="1720789838592" duration="628000" />
     </task>
     <task id="LOCAL-00001" summary="11">
       <option name="closed" value="true" />
@@ -121,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719499435676</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="子项目：2048_基本实现">
+      <option name="closed" value="true" />
+      <created>1719750407030</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719750407030</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,6 +182,7 @@
     <MESSAGE value="子项目：2048_core_board.cpp实现" />
     <MESSAGE value="子项目：2048_core_board.cpp实现2" />
     <MESSAGE value="子项目：2048_core_board.cpp实现test" />
-    <option name="LAST_COMMIT_MESSAGE" value="子项目：2048_core_board.cpp实现test" />
+    <MESSAGE value="子项目：2048_基本实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="子项目：2048_基本实现" />
   </component>
 </project>

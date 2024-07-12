@@ -100,6 +100,19 @@ install(TARGETS AllStudy_project
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+find_package(Qt5 COMPONENTS Core Gui Widgets REQUIRED)
+# 获得qmake所在路径(Qt5.15.2/5.15.2/msvc2019_64/bin/qmake.exe)
+# get_target_property(qmake_exec_filepath Qt5::qmake IMPORTED_LOCATION)
+# qt bin所在目录 (Qt5.15.2/5.15.2/msvc2019_64/bin)
+# get_filename_component(qt_exec_bin_dir "${qmake_exec_filepath}" DIRECTORY)
+# windeployqt所在路径(Qt5.15.2/5.15.2/msvc2019_64/bin/windeployqt.exe)
+# find_program(windeployqt_exec_filepath windeployqt HINTS "${qt_exec_bin_dir}")
+# add_custom_command(TARGET ${PROJECT_NAME} POST_BUILD
+#         COMMAND "${CMAKE_COMMAND}" -E
+#         COMMENT "Running windeployqt..."
+#         )
+
+
 
 if(QT_VERSION_MAJOR EQUAL 6)
     qt_finalize_executable(AllStudy_project)

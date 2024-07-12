@@ -1,5 +1,6 @@
 ﻿#include "mainwindow.h"
 #include "./ui/ui_mainwindow.h"
+
 #include <QToolBar>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -15,10 +16,12 @@ MainWindow::MainWindow(QWidget *parent)
     setupUI();
 
 
+
 }
 
 MainWindow::~MainWindow()
 {
+
     delete ui;
 }
 
@@ -77,17 +80,42 @@ void MainWindow::setupUI()
     // 创建视图菜单
     QMenu *viewMenu = menuBar()->addMenu(tr("&View"));
 
+    // 创建放大动作
     QAction *zoomInAct = new QAction(QIcon(":/images/zoomin.png"), tr("Zoom &In"), this);
+    // 设置快捷键为放大（通常为Ctrl++或Ctrl+=）
     zoomInAct->setShortcuts(QKeySequence::ZoomIn);
+    // 设置状态栏提示信息
     zoomInAct->setStatusTip(tr("Zoom in the document"));
+    // 将放大动作的触发信号连接到MainWindow的zoomIn槽函数
     connect(zoomInAct, &QAction::triggered, this, &MainWindow::zoomIn);
+    // 将放大动作添加到视图菜单中
     viewMenu->addAction(zoomInAct);
 
+    // 创建缩小动作
     QAction *zoomOutAct = new QAction(QIcon(":/images/zoomout.png"), tr("Zoom &Out"), this);
+    // 设置快捷键为缩小（通常为Ctrl+-）
     zoomOutAct->setShortcuts(QKeySequence::ZoomOut);
+    // 设置状态栏提示信息
     zoomOutAct->setStatusTip(tr("Zoom out the document"));
+    // 将缩小动作的触发信号连接到MainWindow的zoomOut槽函数
     connect(zoomOutAct, &QAction::triggered, this, &MainWindow::zoomOut);
+    // 将缩小动作添加到视图菜单中
     viewMenu->addAction(zoomOutAct);
+
+    // 创建游戏菜单
+    QMenu *gameMenu = menuBar()->addMenu(tr("&Game"));
+
+    QAction *game_2048 = new QAction(QIcon(":/images/zoomin.png"), tr("2048"), this);
+
+    game_2048->setStatusTip(tr("将打开2048游戏"));
+    connect(game_2048, &QAction::triggered, this, &MainWindow::game_2048In);
+    gameMenu->addAction(game_2048);
+
+    QAction *zoomOutAct2 = new QAction(QIcon(":/images/zoomout.png"), tr("Zoom &Out"), this);
+    zoomOutAct2->setShortcuts(QKeySequence::ZoomOut);
+    zoomOutAct2->setStatusTip(tr("Zoom out the document"));
+    connect(zoomOutAct2, &QAction::triggered, this, &MainWindow::zoomOut);
+    gameMenu->addAction(zoomOutAct2);
 }
 
 void MainWindow::outUp()
@@ -141,5 +169,16 @@ void MainWindow::outUp()
 
     // 将工具栏添加到主窗口
     addToolBar(Qt::TopToolBarArea, toolBar);
+}
+
+void MainWindow::game_2048In()
+{
+    QMainWindow *gameWindow = new QMainWindow(this);
+    m_gameBoard= new QGameBoard(gameWindow);
+    gameWindow->setCentralWidget(m_gameBoard);
+    gameWindow->setWindowTitle(tr("2048"));
+    gameWindow->resize(400,600); // 你可以根据需要调整窗口大小
+    gameWindow->show();
+    m_gameBoard->setFocus();
 }
 

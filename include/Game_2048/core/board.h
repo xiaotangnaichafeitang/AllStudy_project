@@ -61,8 +61,8 @@ private:
 private:
     // 棋盘矩阵
     QVector<QVector<Tile*>> board;
-    int dimension;
     // 初始化一个空的棋盘
+    int dimension;
     // 上回合得分
     int pointsScoredLastRound;
     // 上回合是否发生数字块碰撞

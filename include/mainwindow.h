@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include <QTextCodec>
 #include <QDebug>
+#include "../include/Game_2048/gui/qgameboard.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,6 +24,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QGameBoard *m_gameBoard;
+
 private slots:
     void newFile() { qDebug() << "New File Action triggered"; }
     void openFile() { qDebug() << "Open File Action triggered"; }
@@ -32,6 +35,6 @@ private slots:
     void paste() { qDebug() << "Paste Action triggered"; }
     void zoomIn() { qDebug() << "Zoom In Action triggered"; }
     void zoomOut() { qDebug() << "Zoom Out Action triggered"; }
-
+    void game_2048In();
 };
 #endif // MAINWINDOW_H
